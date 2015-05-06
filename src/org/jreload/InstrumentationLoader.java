@@ -10,8 +10,9 @@ import java.lang.instrument.UnmodifiableClassException;
  * NB. To use instrumentation API: 
  * 1. "Can-Redefine-Classes=true" and 
  *    "Premain-Class=org.jreload.InstrumentationLoader" MUST be defined in that
- *    order in the jar MANIFEST.MF file 2. The program must be started with the
- *    -javaagent flag, including this class on the jarpath
+ *    order in the jar MANIFEST.MF file 
+ * 2. The program must be started with the -javaagent flag, including this 
+ *    class on the jarpath
  * 
  * see https://docs.oracle.com/javase/7/docs/api/java/lang/instrument/package-
  * summary.html for more details
