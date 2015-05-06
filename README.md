@@ -1,5 +1,5 @@
 # jReload
-java library that allows on-the-fly recompilation and reloading of java source code
+Tiny java library that allows on-the-fly recompilation and reloading of java source code.
 
 Just grab the jreload.jar, and ensure your application is started with the line:
 <pre>
@@ -8,6 +8,8 @@ Just grab the jreload.jar, and ensure your application is started with the line:
 
 You will also need to run your application under the JDK (NOT JRE) and include tools.jar
 on the classpath.
+
+Note that this uses the java instrumentation API, which imposes limitations on what changes can be made. Method bodies can be edited, but many other operations (for example, adding methods and fields) cannot.
 
 Example usage:
 
