@@ -2,7 +2,9 @@
 java library that allows on-the-fly recompilation and reloading of java source code
 
 Just grab the jreload.jar, and ensure your application is started with the line:
+<pre>
 -javaagent:/path/to/jreload.jar
+</pre>
 
 You will also need to run your application under the JDK (NOT JRE) and include tools.jar
 on the classpath.
